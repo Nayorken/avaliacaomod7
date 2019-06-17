@@ -6,6 +6,9 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     {% block titulo %}
     {% endblock %}
     <header>
@@ -21,10 +24,7 @@
             </ul>
         </div>
     </header>
-
-    {% block conteudo %}
-
-    {% endblock %}
-</head>
-</body>
+<body background="/static/bg/1.jpg"></body>
+{% block conteudo %}
+{% endblock %}
 </html>

@@ -5,6 +5,12 @@
     background-size: cover;
 }
 
+body {
+    background-repeat: no-repeat;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;}
+
 html, body{
     height:100%;
     overflow:hidden;
@@ -54,11 +60,10 @@ ul li.active a{
 	height: auto;
 	padding-left: 35px;
 }
-/*-------------------------login--------------------*/
 
 .login-box{
     width: 320px;
-    height: 420px;
+    height: 484px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     top: 50%;
@@ -127,11 +132,3 @@ h1{
 {
     color: #39dc79;
 }
-
-/*----------------------------------------------------------
----------------------- |FOOTER| ----------------------------
-------------------------------------------------------------*/
-
-
-
-

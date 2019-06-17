@@ -16,10 +16,11 @@
         <input type='password' name="pwd" required>
         <h4>Confirme a Passe</h4>
         <input type='password' name="cpwd" required>
-        <p><br></p>
         <input type="submit" value="Submeter">
-        {% if erro %}
-        <h2>{{ erro }}</h2>
+        <center>
+            {% if erro %}
+            <h3>{{ erro }}</h3>
+        </center>
         {% endif %}
     </form>
 </div>
