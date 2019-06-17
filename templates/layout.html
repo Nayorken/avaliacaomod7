@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
-    <title>A minha página SQLite3</title>
-    <!-- Load an icon library -->
-    <link rel="shortcut icon" href="static/favicon.png">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="shortcut icon" href="/static/favicon.png">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    {% block head %}
+    {% block titulo %}
     {% endblock %}
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="/"><img src="/static/website/2.png"></a>
+            </div>
+            <ul>
+                <li><a href="login">Login</a></li>
+                <li><a href="registo">Registo</a></li>
+                <li><a href="apagar">Eliminar Conta</a></li>
+                <li><a href="newpass">NewPass</a></li>
+            </ul>
+        </div>
+    </header>
 
+    {% block conteudo %}
+
+    {% endblock %}
 </head>
-<body>
-
-<div class="navbar">
-    <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a href="/login"><i class="fa fa-fw fa-lock"></i> Entrar</a>
-    <a href="/registo"><i class="fa fa-fw fa-user"></i> Registo</a>
-    <a href="/newpass"><i class="fa fa-fw fa-recycle"></i> Alterar Passe</a>
-    <a href="/apagar"><i class="fa fa-fw fa-recycle"></i> Eliminar Conta</a>
-</div>
-
-{% block body %}
-{% endblock %}
-
-<h4>&copy; 2019 Hugo Ferreira</h4>
 </body>
 </html>

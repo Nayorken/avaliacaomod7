@@ -1,23 +1,29 @@
 {% extends 'layout.html' %}
-
-{% block body %}
-<h2>Criar Conta</h2>
-<form method="post">
-    <fieldset>
-        <legend>Introduza os seus dados</legend>
-        <h4>Utilizador</h4>
-        <input type='text' name="usr" required>
-        <h4>Palavra-Passe</h4>
-        <input type='password' name="pwd" required>
-        <h4>Confirme a Passe</h4>
-        <input type='password' name="cpwd" required>
-        <p><br></p>
-        <input type="submit" value="Submeter">
-    </fieldset>
-</form>
-{% if erro %}
-<h3>{{ erro }}</h3>
-{% endif %}
+{% block titulo %}
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<body>
 {% endblock %}
 
+{% block conteudo %}
+<div class="login-box">
+    <img src="static/imm/avatar.png" class="avatar">
+    <form method="post">
+        <h3>Utilizador</h3>
+        <input type="text" name="usr" required>
+        <h3>Introduza a Palavra-Passe</h3>
+        <input type="password" name="pwd" required>
+        <h3>Confirme a Palavra-Passe</h3>
+        <input type="password" name="cpwd" required>
+        <br>
+        <input type="submit" value="Registar">
+        <center>
+        {% if erro %}<h4>{{ erro }}</h4>{% endif %}
+        </center>
+    </form>
+</div>
 
+
+</body>
+{% endblock %}
